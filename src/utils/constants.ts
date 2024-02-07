@@ -99,6 +99,12 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0x4200000000000000000000000000000000000006',
     creationBlock: 9107268,
   },
+  // Mantle testnet
+  [5001]: {
+    router: '0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD',
+    weth: '0xC41aD52b4d1D32da6d02950383808d89fF264986',
+    creationBlock: 9107268,
+  },
 }
 
 export const UNIVERSAL_ROUTER_ADDRESS = (chainId: number): string => {
