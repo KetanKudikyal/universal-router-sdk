@@ -101,9 +101,9 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
   },
   // Mantle testnet
   [5001]: {
-    router: '0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD',
+    router: '0xE279C3FF972De7c8Cd6f6f93EC04021e8d1b2d90',
     weth: '0xC41aD52b4d1D32da6d02950383808d89fF264986',
-    creationBlock: 9107268,
+    creationBlock: 30950864,
   },
 }
 
@@ -125,7 +125,7 @@ export const WETH_ADDRESS = (chainId: number): string => {
   return CHAIN_CONFIGS[chainId].weth
 }
 
-export const PERMIT2_ADDRESS = '0x000000000022D473030F116dDEE9F6B43aC78BA3'
+export const PERMIT2_ADDRESS = '0x64962efd16C569CE5130F700Cc3a81F6E2E6349b'
 
 export const CONTRACT_BALANCE = BigNumber.from(2).pow(255)
 export const ETH_ADDRESS = '0x0000000000000000000000000000000000000000'
